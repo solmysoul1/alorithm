@@ -1,3 +1,5 @@
+# 소수 찾기
+
 T = int(input())
 arr = list(map(int, input().split()))
 result = 0
