@@ -1,5 +1,4 @@
 # 줄세우기
-
 T = int(input())
 result = list(map(int, input().split()))
 turn = []
