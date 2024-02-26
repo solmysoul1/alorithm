@@ -30,3 +30,4 @@ for tc in range(1, T+1):
             if maze[i][j] == '2':
                 i = s
                 j = t
+
