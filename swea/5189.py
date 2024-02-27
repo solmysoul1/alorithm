@@ -93,7 +93,7 @@ for tc in range(1, T+1):
     e(0,N-1)
     min_value = min(total)
 
-    print(f'{tc} {min_value}')
+    print(f'#{tc} {min_value}')
     
 
 
