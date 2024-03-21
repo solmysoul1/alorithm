@@ -7,6 +7,7 @@ def dfs():
     prev = 0
     for i in range(N):
         if not visited[i] and prev != arr[i]:
+            visited[i] = 1
             tmp.append(arr[i])
             prev = arr[i]
             dfs()
