@@ -9,6 +9,7 @@ def cal(alst,blst):
     return abs(asm-bsm)
 
 def dfs(n,alst,blst):
+    global ans
     if n == M:
         if len(alst) == len(blst):
             ans = min(ans, cal(alst,blst))
