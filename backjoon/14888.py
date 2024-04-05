@@ -27,5 +27,6 @@ add, sub, mul, div = map(int, input().split())
 # 1e8 (1*10**8)
 mn, mx = int(1e9), int(-1e9)  # min, max 값 초기화
 dfs(1, add, sub, mul, div, I[0])
-print(mx, mn)
+print(mx)
+print(mn)
 

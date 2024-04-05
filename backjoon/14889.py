@@ -1,19 +1,17 @@
 # 스타트와 링크
 
-def cal(alst,blst):
-    asm = bsm = 0
-    for i in range(M):
-        for j in range(M):
-            asm += capa[alst[i]][blst[j]]
-            bsm += capa[blst[i]][blst[j]]
-    return abs(asm-bsm)
-
 def dfs(n,alst,blst):
     global ans
-    if n == M:
+    if n == N:
         if len(alst) == len(blst):
-            ans = min(ans, cal(alst,blst))
+            asm = bsm = 0
+            for i in range(M):
+                for j in range(M):
+                    asm += capa[alst[i]][alst[j]]
+                    bsm += capa[blst[i]][blst[j]]
+            ans = min(ans, abs(asm-bsm))
         return
+    
     dfs(n+1,alst+[n],blst)
     dfs(n+1,alst,blst+[n])
 
