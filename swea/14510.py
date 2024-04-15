@@ -34,17 +34,12 @@ for tc in range(1,T+1):
         gap = max_height - tree
         even += gap // 2
         odd += gap % 2
-
-    # odd = 0     # 홀수 날의 수
-    # even = 0    # 짝수 날의 수 
-    # even += total_gap // 2 
-    # odd += total_gap % 2
     
     # 규칙에 따르면
     # 짝수 날이 더 많을 경우에는
     # 짝수 날과 홀수 날의 차이가 1 이하여야함
     # 짝수 날과 홀수 날의 개수 맞추기
-    
+
     if even > odd: 
         while abs(even-odd) > 1:
             even -= 1
